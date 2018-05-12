@@ -7,7 +7,7 @@ var mongo = require("mongodb").mongoClient;
 mongo.connect(url, function(err, db){
   if (err) throw err;
   var docs = db.collection("docs");
-  docs.insert(new_doc, function(err, data){
+  docs.insert(new_doc,function(err, data){
     if (err) throw err;
     console.log(JSON.stringify(new_doc));
     db.close();
