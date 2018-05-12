@@ -12,7 +12,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "learnyoumongo": "^3.2.1",
-    "mongodb": "^3.1.0-beta4"
+    "mongodb": "^2.2.33"
   },
   "engines": {
     "node": "8.x"

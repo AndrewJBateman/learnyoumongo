@@ -1,7 +1,7 @@
 dependencies:
   express: 4.16.3
   learnyoumongo: 3.2.1
-  mongodb: 3.1.0-beta4
+  mongodb: 2.2.33
 packages:
   /abbrev/1.1.1:
     dev: false
@@ -403,6 +403,13 @@ packages:
     dev: false
     resolution:
       integrity: sha1-3j5fiWHIjHh+4TaN+EmsRBPsqNc=
+  /mongodb-core/2.1.17:
+    dependencies:
+      bson: 1.0.6
+      require_optional: 1.0.1
+    dev: false
+    resolution:
+      integrity: sha1-pBizN6FKFJkPtRC5I97mqBMXPfg=
   /mongodb-core/2.1.19:
     dependencies:
       bson: 1.0.6
@@ -410,15 +417,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Jt4AtWUkpuW03kRdYGxga4O65O1UHlFfvvInslEfLlGi+zDMxbBe3J2NVmN9qPJ957Mn6Iz0UpMtV80cmxCVxw==
-  /mongodb-core/3.1.0-beta4:
+  /mongodb/2.2.33:
     dependencies:
-      bson: 1.0.6
-      require_optional: 1.0.1
+      es6-promise: 3.2.1
+      mongodb-core: 2.1.17
+      readable-stream: 2.2.7
     dev: false
-    optionalDependencies:
-      saslprep: 1.0.0
+    engines:
+      node: '>=0.10.3'
     resolution:
-      integrity: sha512-aiwUKBGmFZwBx4CdC1iK5kjZyk0zhDxQ0edRtpTZUkk1jyWkdzYd6GEA6wMl7O6ZX/dOiFM2ujkrUR7+vkqJPw==
+      integrity: sha1-tTfEcdNKZlG0jzb9vyl1A0Dgi1A=
   /mongodb/2.2.35:
     dependencies:
       es6-promise: 3.2.1
@@ -429,14 +437,6 @@ packages:
       node: '>=0.10.3'
     resolution:
       integrity: sha512-3HGLucDg/8EeYMin3k+nFWChTA85hcYDCw1lPsWR6yV9A6RgKb24BkLiZ9ySZR+S0nfBjWoIUS7cyV6ceGx5Gg==
-  /mongodb/3.1.0-beta4:
-    dependencies:
-      mongodb-core: 3.1.0-beta4
-    dev: false
-    engines:
-      node: '>=4'
-    resolution:
-      integrity: sha512-nJAK59fFlMWTdEJaTyGp3HeerkIahnupoMNjbszPJVnO63/36aFnlWHqpYrrJwj9GKlmb47YWBIvNo6fdrUL4Q==
   /ms/2.0.0:
     dev: false
     resolution:
@@ -611,13 +611,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==
-  /saslprep/1.0.0:
-    dev: false
-    engines:
-      node: '>=6'
-    optional: true
-    resolution:
-      integrity: sha512-5lvKUEQ7lAN5/vPl5d3k8FQeDbEamu9kizfATfLLWV5h6Mkh1xcieR1FSsJkcSRUk49lF2tAW8gzXWVwtwZVhw==
   /semver/5.5.0:
     dev: false
     resolution:
@@ -861,4 +854,4 @@ shrinkwrapVersion: 3
 specifiers:
   express: ^4.16.3
   learnyoumongo: ^3.2.1
-  mongodb: ^3.1.0-beta4
+  mongodb: ^2.2.33
