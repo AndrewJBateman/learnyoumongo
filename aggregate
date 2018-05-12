@@ -12,7 +12,7 @@ mongo.connect(url, function(err, db){
     }}
     , { $group: {
       _id: "average",
-      average: {
+      total: {
         $avg: "$price"
       } 
     }}
