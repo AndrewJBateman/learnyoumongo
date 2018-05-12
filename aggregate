@@ -19,7 +19,7 @@ mongo.connect(url, function(err,db){
   ]).toArray(function(err, results){
     if (err) throw err
     var o = results[0]
-    console.log(Number(o.average).toFixed(2))
+    console.log(o.average).toFixed(2))
     db.close()
   })
 })
