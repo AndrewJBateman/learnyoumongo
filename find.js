@@ -10,5 +10,6 @@ mongo.connect(url, function(connect_err, db) {
   }).toArray(function(find_err,data){
     if (find_err) throw find_err;
     console.log(data);
+    db.close();
   })
 });
