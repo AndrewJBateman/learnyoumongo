@@ -3,16 +3,16 @@ var mongo = require("mongodb").MongoClient
 
 mongo.connect(url, function(err,db){
   if (err) throw err
-  var prices = db.collection("prices")
+  var prices = db.db('learnyoumongo').collection("prices")
   
   prices.aggregate([
     { $match:{
-      size: process.argv[2]
+      size: String(process.argv[2])
     }}
     , 
     { $group: {
       _id: "average",
-      ave: {
+      average: {
         $avg: "$price"
       } 
     }}
