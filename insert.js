@@ -1,8 +1,14 @@
+var mongo = require("mongodb").MongoClient;
 var url = "mongodb://localhost:27017/learnyoumongo";
-var first_name = process.argv[2];
-var last_name = process.argv[3];
-var new_doc = {firstName: first_name, lastName: last_name};
-var mongo = require("mongodb").mongoClient;
+var firstName = process.argv[2];
+var lastName = process.argv[3];
+
+var new_doc = {
+  'firstName': firstName,
+  'lastName': lastName
+};
+
+
 
 mongo.connect(url, function(err, db){
   if (err) throw err;
