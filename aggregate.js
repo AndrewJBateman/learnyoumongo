@@ -1,4 +1,5 @@
-/*Challenge: output the average price
+/*Challenge: Exercise 9 of 9
+output the average price
 of the items that match the size criteria input
 the average is converted to number and rounded to
 2 decimals*/
